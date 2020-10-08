@@ -6,3 +6,16 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+
+* {
+  box-sizing: border-box;
+}
+html, des.html{
+  background-image: url("images/image-us-flag.jpg" );
+
+  
+}
+h1{
+  color: white;
+  text-align:center;
+}

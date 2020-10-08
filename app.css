@@ -10,9 +10,8 @@
 * {
   box-sizing: border-box;
 }
-html, des.html{
+html{
   background-image: url("images/image-us-flag.jpg" );
-
   
 }
 h1{

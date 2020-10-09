@@ -1,0 +1,38 @@
+
+
+
+html{
+    background-image: url("images/image-us-flag.jpg" );
+     
+  }
+
+#container{
+    height: 300px;
+    width:1000px;
+    background-color: rgb(209, 202, 202);
+    margin: 20px auto;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px black;
+    position:relative;
+  }
+
+h3{
+    font-size:20px;
+    text-align: center;
+}
+.intro-btn {
+    position: relative;
+    width: 200px;
+    height:40px;
+    background-color:blue;
+    color:white;
+    border-radius:15px;
+    text-align: center;
+    left: 400px;
+    cursor: pointer;
+    margin-top: 50px;
+    text-decoration: none;
+    border: 2px solid;
+    padding:20px;
+}

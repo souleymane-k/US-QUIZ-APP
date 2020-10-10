@@ -6,10 +6,13 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+/*    */
 html{
   background-image: url("images/image-us-flag.jpg" );
    
 }
+
+/* HEADER    */
 
 header div{
   text-align:center;
@@ -18,9 +21,62 @@ header div p{
  font-size: 10px;
  
 }
+
+/* H VALUES   */
 h1{
   color:#BD0B2F;
 }
+
+/* ---------------Groups & Items  (Mobile First) ----------- */
+#container{
+  width: 100%;
+  margin:auto;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+/* Media Query and type  for screen grater or equal to 600px*/
+@media all and (max-width: 600px) {
+  #container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+}
+
+
+/* Media Query and type  for screen grater or equal to 600px*/
+@media all and (min-width: 600px) {
+  #container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+
+
+
+
+/*  THE CONTAINER ---------------------------*/
 #container{
   height: 300px;
   width:1000px;
@@ -31,6 +87,8 @@ h1{
   box-shadow: 3px 3px 3px 3px black;
   position:relative;
 }
+
+
 .result{
   text-align:center;
   font-size:20px;
@@ -42,6 +100,8 @@ h1{
   background-color: blue;
   color:white;
 }
+
+/*--------     btn    ---------------*/
 #btn-next{
   text-align:center;
   font-size:20px;
@@ -58,6 +118,15 @@ h1{
   cursor: pointer;
   display:none;
 }
+.btn-sbt{
+  background-color: blue;
+  color:white;
+  border-radius: 10px;
+  margin-top:35px;
+}
+
+
+
 .firstForm{
   font-size:20px;
   /*display:none;*/
@@ -66,12 +135,7 @@ h1{
 ul li{
   list-style: none;
 }
-.btn-sbt{
-  background-color: blue;
-  color:white;
-  border-radius: 10px;
-  margin-top:35px;
-}
+
 #incorrectAnswer{
   background-color:red;
   color:white;
@@ -102,6 +166,8 @@ ul li{
   display:none;
 
 }
+
+
 
 
 

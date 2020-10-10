@@ -76,7 +76,7 @@ h1{
 
 
 
-/*  THE CONTAINER ---------------------------*/
+/*-------------- THE CONTAINER ---------------------------*/
 #container{
   height: 300px;
   width:1000px;
@@ -131,6 +131,7 @@ h1{
   font-size:20px;
   /*display:none;*/
   text-decoration: none;
+  margin-left: 5px;
 }
 ul li{
   list-style: none;
@@ -151,7 +152,6 @@ ul li{
   display:none;
 }
 #correctAnswer{
-
   background-color:green;
   color:white;
   position:absolute;
@@ -166,6 +166,11 @@ ul li{
   display:none;
 
 }
+.first-question{
+  text-align: left;
+  margin-left:10px;
+}
+
 
 
 

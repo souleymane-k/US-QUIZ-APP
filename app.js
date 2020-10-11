@@ -58,19 +58,5 @@ const store = {
 // These functions handle events (submit, click, etc)
 
 // Html template generator //
-function select(){
-  console.log(select);
-  $('a').after(h3Template);
-  
-}
 
-function callBack(){
-  
-  $('body').click(select);
-}
-function h3Template(){
-  return '<h3> Souleymane Kone</h3>';
-}
-
-$(callBack);
 

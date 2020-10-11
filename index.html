@@ -16,59 +16,110 @@
   <!--This is the title of the app h1-->
   <header>
     <div>
-    <h1>USA Presidency Office History App Quiz</h1>
-  
+      <h1>USA Presidency Office History App Quiz</h1>
+         <div class="result">
+           <h3>Question Number : <span id="Qnumber">0</span></br>
+             Score : <span id="score">0</span></h3>
+          </div>
         </div>
       </header>
        <main>
   <!--Section Question number 1 with a div for result, score, correct and incorrect boxes-->
+       <div class="group">
          <div id="container">
-          <div class="group">
-          <div class="item">
-           <div class="result">
-             <p>Question Number : <span id="Qnumber">0</span></br>
-                Score : <span id="score">0</span></p>
-                 </div>
-                    <div>
-                      <button id="btn-next" >Next >>></button>      
-                        </div>
-                      <div id="correctAnswer">
-                    <p>Correct <span></span> </p>    
-                  </div>
-                <div id="incorrectAnswer">
-              Incorrect <br>
-             Correct Answer is: <span>Dweight Eisenhower</span>
-           </div>
-          </div>
-          <div class="item-double"></div>
-           <div class="first-question js-first-question"> 
-       <form class="firstForm">
-           <h2>Who was the president of the United States in 1960? </h2>
-            <ul>
-              <li>
-                <input type="radio" id="name1" name="president" value="Ronald-Reagan">
-                  <label for="name1">Ronald Reagan</label>
-                    </li>
-                      <li>
-                        <input type="radio" id="name2" name="president" value="dwight-eisenhower">
-                         <label for="name2">Dwight Eisenhower</label>
-                        </li>
-                        <li>
+           <div class="item-double">
+             <div class="first-question js-first-question"> 
+               <form class="firstForm">
+                 <p>Who was the president of the United States in 1960? </p>
+                   <ul>
+                     <li>
+                      <input type="radio" id="name1" name="president" value="Ronald-Reagan">
+                         <label for="name1">Ronald Reagan</label>
+                           </li>
+                             <li>
+                              <input type="radio" id="name2" name="president" value="dwight-eisenhower">
+                            <label for="name2">Dwight Eisenhower</label>
+                           </li>
+                         <li>
                        <input type="radio" id="name3" name="president" value="borack-obama">
                      <label for="name3">Borack Obama</label>
                     </li>
-                  <li>
-                <input type="radio" id="name4" name="president" value="jimmy-carter">
+                   <li>
+                 <input type="radio" id="name4" name="president" value="jimmy-carter">
               <label for="name4">Jimmy Carter</label>
             </li>
-            </ul>
-            <button class="btn-sbt">Submit</button>  
-            </form>
-          </div>  
-          </div>
-         </div> 
+          </ul>
+        <button class="btn-sbt">Submit</button>  
+          </form>
+             </div>  
+                </div>
+                   <div class="item">
+                     <div id="correctAnswer">
+                        <p>Correct <span></span> </p>    
+                          </div>
+                            <div id="incorrectAnswer">
+                           Incorrect <br>
+                        Correct Answer is: <span>Dweight Eisenhower</span>
+                     </div>
+                   <div>
+                 <button id="btn-next" >Next >>></button>      
+               </div>
+             </div>
+           </div>
         </div>
+        </div>
+        </div>
+
+
   <!--Section Question number 2 with a div for result, score, correct and incorrect boxes-->
+  <div class="group">
+    <div id="container">
+      <div class="item-double">
+        <div class="first-question js-first-question"> 
+          <form class="firstForm">
+            <p>Who was the president of the United States in 1970?  </p>
+              <ul>
+                <li>
+                 <input type="radio" id="name1" name="president" value="Ronald-Reagan">
+                    <label for="name1">Ronald Reagan</label>
+                      </li>
+                        <li>
+                         <input type="radio" id="name2" name="president" value="dwight-eisenhower">
+                       <label for="name2">Dwight Eisenhower</label>
+                      </li>
+                    <li>
+                  <input type="radio" id="name3" name="president" value="borack-obama">
+                <label for="name3">Borack Obama</label>
+               </li>
+              <li>
+            <input type="radio" id="name4" name="president" value="jimmy-carter">
+         <label for="name4">Jimmy Carter</label>
+       </li>
+     </ul>
+   <button class="btn-sbt">Submit</button>  
+     </form>
+        </div>  
+           </div>
+              <div class="item">
+                <div id="correctAnswer">
+                   <p>Correct <span></span> </p>    
+                     </div>
+                       <div id="incorrectAnswer">
+                      Incorrect <br>
+                   Correct Answer is: <span>Dweight Eisenhower</span>
+                </div>
+              <div>
+            <button id="btn-next" >Next >>></button>      
+          </div>
+        </div>
+      </div>
+   </div>
+   </div>
+   </div>
+
+
+
+<!-- 
 
             <div id="container">
                <div class="group">
@@ -117,7 +168,7 @@
       </div>
       </div>
 
-   <!--Section Question number 3 with a div for result, score, correct and incorrect boxes-->
+   Section Question number 3 with a div for result, score, correct and incorrect boxes
    
         <div id="container">
           <div class="group">
@@ -167,7 +218,7 @@
             </div>
 
 
-    <!--Section Question number 4 with a div for result, score, correct and incorrect boxes-->
+    Section Question number 4 with a div for result, score, correct and incorrect boxes
                 <div id="container">
                   <div class="group">
                     <div class="item">
@@ -215,7 +266,7 @@
                   </div>  
                   </div>
 
-  <!--Section Question number 5 with a div for result, score, correct and incorrect boxes-->
+  Section Question number 5 with a div for result, score, correct and incorrect boxes
 
                     <div id="container">
                       <div class="group">
@@ -261,7 +312,7 @@
                       </div>
                        </div>  
                         </div>
-      <!--Section Question number 6 with a div for result, score, correct and incorrect boxes-->
+      Section Question number 6 with a div for result, score, correct and incorrect boxes
 
                           <div id="container">
                             <div class="group">
@@ -307,7 +358,7 @@
                   </div>
                    </div>  
                     </div>
-             <!--Section Question number 7 with a div for result, score, correct and incorrect boxes-->
+             Section Question number 7 with a div for result, score, correct and incorrect boxes
                 <div id="container">
                   <div class="group">
                    <div class="result">
@@ -351,7 +402,8 @@
              </div>
             </div> 
             </div> 
-             </div>
+             </div> 
+             -->
             </main>
              <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
              <script src="app.js"></script>

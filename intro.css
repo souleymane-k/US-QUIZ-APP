@@ -1,28 +1,33 @@
 
 
-
+* {
+  box-sizing:border-box;
+}
 html{
     background-image: url("images/image-us-flag.jpg" );
      
   }
 
-#container{
+#startContainer{
     height: 300px;
-    width:1000px;
+    width:800px;
     background-color: rgb(209, 202, 202);
     margin: 20px auto;
     padding:20px;
     border-radius: 10px;
     box-shadow: 3px 3px 3px 3px black;
-    position:relative;
+   /* position:relative;*/
   }
 
 h3{
     font-size:20px;
     text-align: center;
 }
-.intro-btn {
-    position: relative;
+h2{
+  text-align:center;
+}
+#start {
+    /*position: relative;*/
     width: 200px;
     height:40px;
     background-color:blue;
@@ -34,5 +39,30 @@ h3{
     margin-top: 50px;
     text-decoration: none;
     border: 2px solid;
-    padding:20px;
+    padding:5px;
 }
+/* Media Query and type  for screen grater or equal to 800px*/
+@media all and (max-width: 600px) {
+  #startContainer {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+}
+
+
+/* Media Query and type  for screen grater or equal to 800px*/
+@media all and (min-width: 800px) {
+  #startContainer {
+    width: 70%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+

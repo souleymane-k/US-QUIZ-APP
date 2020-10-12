@@ -17,396 +17,538 @@
   <header>
     <div>
       <h1>USA Presidency Office History App Quiz</h1>
-         <div class="result">
-           <h3>Question Number : <span id="Qnumber">0</span></br>
-             Score : <span id="score">0</span></h3>
-          </div>
         </div>
       </header>
        <main>
+        <ul class="result">
+          <li id="Qnumber">
+            Question Number: 1/7</li>
+          
+          <li id=score>
+            Score : 0/7</li>
+        </ul>
   <!--Section Question number 1 with a div for result, score, correct and incorrect boxes-->
-       <div class="group">
+      <div class="group">
          <div id="container">
            <div class="item-double">
              <div class="first-question js-first-question"> 
                <form class="firstForm">
-                 <p>Who was the president of the United States in 1960? </p>
-                   <ul>
-                     <li>
-                      <input type="radio" id="name1" name="president" value="Ronald-Reagan">
-                         <label for="name1">Ronald Reagan</label>
-                           </li>
-                             <li>
-                              <input type="radio" id="name2" name="president" value="dwight-eisenhower">
-                            <label for="name2">Dwight Eisenhower</label>
-                           </li>
-                         <li>
-                       <input type="radio" id="name3" name="president" value="borack-obama">
-                     <label for="name3">Borack Obama</label>
-                    </li>
-                   <li>
-                 <input type="radio" id="name4" name="president" value="jimmy-carter">
-              <label for="name4">Jimmy Carter</label>
-            </li>
-          </ul>
-        <button class="btn-sbt">Submit</button>  
+                 <div class="usQuestion">
+                   <p>Who was the president of the United States in 1960? </p>
+                    </div>
+                       <div id="input1">
+                         <input type="radio" id="option1" name="option" value="Ronald-Reagan">
+                            <label for="option1">Ronald Reagan</label>
+                              </div>
+                                <div id="input2">
+                              <input type="radio" id="option2" name="option" value="Dwight Eisenhower">
+                            <label for="option2">Dwight Eisenhower</label>
+                          </div>
+                         <div id="question3">
+                       <input type="radio" id="option3" name="option" value="Borack Obama">
+                     <label for="option3">Borack Obama</label>
+                  </div>
+                <div id=question4>
+                <input type="radio" id="option4" name="option" value="Jimmy Carter">
+              <label for="option4">Jimmy Carter</label>
+            </div>
+        </div>
+        <button type="submit" class="btn-sbt">Submit</button> 
           </form>
-             </div>  
-                </div>
+             </div>    
                    <div class="item">
-                     <div id="correctAnswer">
+                    <!-- <div id="correctAnswer">
                         <p>Correct <span></span> </p>    
                           </div>
                             <div id="incorrectAnswer">
                            Incorrect <br>
                         Correct Answer is: <span>Dweight Eisenhower</span>
-                     </div>
-                   <div>
-                 <button id="btn-next" >Next >>></button>      
+                     </div>-->
+                     <button type="button" id="btn-next"> Next >>></button> 
+                   </div>
+                 </div>
                </div>
-             </div>
-           </div>
-        </div>
-        </div>
-        </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
 
 
   <!--Section Question number 2 with a div for result, score, correct and incorrect boxes-->
-  <div class="group">
-    <div id="container">
-      <div class="item-double">
-        <div class="first-question js-first-question"> 
-          <form class="firstForm">
-            <p>Who was the president of the United States in 1970?  </p>
-              <ul>
-                <li>
-                 <input type="radio" id="name1" name="president" value="Ronald-Reagan">
-                    <label for="name1">Ronald Reagan</label>
-                      </li>
-                        <li>
-                         <input type="radio" id="name2" name="president" value="dwight-eisenhower">
-                       <label for="name2">Dwight Eisenhower</label>
-                      </li>
-                    <li>
-                  <input type="radio" id="name3" name="president" value="borack-obama">
-                <label for="name3">Borack Obama</label>
-               </li>
-              <li>
-            <input type="radio" id="name4" name="president" value="jimmy-carter">
-         <label for="name4">Jimmy Carter</label>
-       </li>
-     </ul>
-   <button class="btn-sbt">Submit</button>  
-     </form>
-        </div>  
-           </div>
-              <div class="item">
-                <div id="correctAnswer">
-                   <p>Correct <span></span> </p>    
-                     </div>
-                       <div id="incorrectAnswer">
-                      Incorrect <br>
-                   Correct Answer is: <span>Dweight Eisenhower</span>
-                </div>
-              <div>
-            <button id="btn-next" >Next >>></button>      
-          </div>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> IntroductionUS Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="intro.css" rel="stylesheet" type="text/css"/>
+  <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <!--This is the title of the app h1-->
+  <header>
+    <div>
+      <h1>USA Presidency Office History App Quiz</h1>
         </div>
-      </div>
-   </div>
-   </div>
-   </div>
-
-
-
-<!-- 
-
-            <div id="container">
-               <div class="group">
-                 <div class="item">
-                <div class="result">
-                    <p>Question Number : <span id="Qnumber">0</span></br>
-                        Score : <span id="score">0</span></p>
-                       </div>
-                          <div>
-                            <button id="btn-next" >Next >>></button>      
-                              </div>
-                               <div id="correctAnswer">
-                                <p>Correct <span></span> </p>    
-                            </div>
-                         <div id="incorrectAnswer">
-                       Incorrect <br>
-                   Correct Answer is: <span>Richard Nixon</span>
-                 </div>
-                </div>
-                  <div class="item-double">
-               <div class="first-question js-first-question"> 
-           <form class="firstForm">
-              <h2>Who was the president of the United States in 1970? </h2>
-            <ul>
-              <li>
-                <input type="radio" id="name1" name="president" value="Ronald-Reagan">
-                  <label for="name1">Ronald Reagan</label>
-                    </li>
-                      <li>
-                        <input type="radio" id="name2" name="president" value="jimmy-Carter">
-                          <label for="name2">Jimmy Carter</label>
-                           </li>
-                            <li>
-                           <input type="radio" id="name3" name="president" value="Richard-nixon">
-                          <label for="name3">Richard Nixon</label>
-                       </li>
-                      <li>
-                    <input type="radio" id="name4" name="president" value="Harry-Truman">
-                 <label for="name4">Harry Truman</label>
-              </li>
-            </ul>
-            <button class="btn-sbt">Submit</button>  
-       </form>
-       </div>  
-        </div>
-      </div>
-      </div>
-
-   Section Question number 3 with a div for result, score, correct and incorrect boxes
-   
-        <div id="container">
-          <div class="group">
-          <div class="item">
-           <div class="result">
-             <p>Question Number : <span id="Qnumber">0</span></br>
-                Score : <span id="score">0</span></p>
-                  </div>
-                     <div>
-                       <button id="btn-next" >Next >>></button>      
-                         </div>
-                            <div id="correctAnswer">
-                              <p>Correct <span></span> </p>    
-                           </div>
-                        <div id="incorrectAnswer">
-                       Incorrect <br>
-                    Correct Answer is: <span>Jimmy Carter</span>
-                 </div>
-                </div>
-                <div class="item-double">
-               <div class="first-question js-first-question"> 
-         <form class="firstForm">
-            <h2>Who was the president of the United States in 1980? </h2>
-              <ul>
-                <li>
-                  <input type="radio" id="name1" name="president" value="Gerald-ford">
-                    <label for="name1">Gerald Ford</label>
-                     </li>
-                       <li>
-                         <input type="radio" id="name2" name="president" value="Lyndon-Johnson">
-                           <label for="name2">Dwight Eisenhower</label>
-                             </li>
-                               <li>
-                                <input type="radio" id="name3" name="president" value="bill-clinton">
-                              <label for="name3">Borack Obama</label>
-                            </li>
-                           <li>
-                         <input type="radio" id="name4" name="president" value="jimmy-carter">
-                      <label for="name4">Jimmy Carter</label>
-                    </li>
-                </ul>
-               <button class="btn-sbt">Submit</button>  
-            </form>
-            </div>
-            </div>
-            </div>  
-            </div>
-
-
-    Section Question number 4 with a div for result, score, correct and incorrect boxes
-                <div id="container">
-                  <div class="group">
-                    <div class="item">
-                   <div class="result">
-                     <p>Question Number : <span id="Qnumber">0</span></br>
-                      Score : <span id="score">0</span></p>
-                        </div>
-                            <div>
-                              <button id="btn-next"> Next >>></button>      
-                                 </div>
-                                   <div id="correctAnswer">
-                                 <p>Correct <span></span> </p>    
-                               </div>
-                             <div id="incorrectAnswer">
-                           Incorrect <br>
-                          Correct Answer is: <span>George Bush</span>
-                        </div>
-                      </div>
-                      <div class="item-double">
-                     <div class="first-question js-first-question"> 
+      </header>
+       <main>
+        <ul class="result">
+          <li id="Qnumber">
+            Question Number: 2/7</li>
+          
+          <li id=score>
+            Score : 0/7</li>
+        </ul>
+  <!--Section Question number 2 with a div for result, score, correct and incorrect boxes-->
+      <div class="group">
+         <div id="container">
+           <div class="item-double">
+             <div class="second-question js-second-question"> 
                <form class="firstForm">
-                <h2>Who was the president of the United States in 1990? </h2>
-                  <ul>
-                    <li>
-                       <input type="radio" id="name1" name="president" value="bill-clinton">
-                          <label for="name1">Bill Clinton</label>
-                             </li>
-                                <li>
-                                <input type="radio" id="name2" name="president" value="george-bush">
-                                    <label for="name2">George Bush</label>
-                                      </li>
-                                        <li>
-                                       <input type="radio" id="name3" name="president" value="Richard-nixon">
-                                     <label for="name3">Richard Noxon</label>
-                                   </li>
-                                 <li>
-                                <input type="radio" id="name4" name="president" value="jimmy-carter">
-                             <label for="name4">Jimmy Carter</label>
-                         </li>
-                       </ul>
-                      <button class="btn-sbt">Submit</button>  
-                  </form>
-                  </div> 
-                  </div> 
-                  </div>  
-                  </div>
-
-  Section Question number 5 with a div for result, score, correct and incorrect boxes
-
-                    <div id="container">
-                      <div class="group">
-                     <div class="result">
-                        <p>Question Number : <span id="Qnumber">0</span></br>
-                           Score : <span id="score">0</span></p>
-                            </div>
-                               <div>
-                                 <button id="btn-next" >Next >>></button>      
-                                   </div>
-                                  <div id="correctAnswer">
-                                    <p>Correct <span></span> </p>    
-                                   </div>
-                               <div id="incorrectAnswer">
-                              Incorrect <br>
-                             Correct Answer is: <span>Bill Clinton</span>
-                            </div>
-                            <div calss="item-double">
-                          <div class="first-question js-first-question"> 
-                      <form class="firstForm">
-                       <h2>Who was the president of the United States in 2000? </h2>
-                         <ul>
-                           <li>
-                             <input type="radio" id="name1" name="president" value="barack-obama">
-                               <label for="name1">Borakc Obama</label>
-                                 </li>
-                                    <li>
-                                      <input type="radio" id="name2" name="president" value="george-W-bush">
-                                         <label for="name2">George W Bush</label>
-                                           </li>
-                                          <li>
-                                         <input type="radio" id="name3" name="president" value="borack-obama">
-                                       <label for="name3">Borack Obama</label>
-                                      </li>
-                                    <li>
-                                    <input type="radio" id="name4" name="president" value="bill-clinton">
-                              <label for="name4">Bill Clinton</label>
-                             </li>
-                           </ul>
-                          <button class="btn-sbt">Submit</button>  
-                       </form>
-                        </div> 
-                      </div>
-                       </div>  
-                        </div>
-      Section Question number 6 with a div for result, score, correct and incorrect boxes
-
-                          <div id="container">
-                            <div class="group">
-                              <div class="result">
-                                <p>Question Number : <span id="Qnumber">0</span></br>
-                                   Score : <span id="score">0</span></p>
-                                      </div>
-                                          <div>
-                                            <button id="btn-next" >Next >>></button>      
-                                             </div>
-                                           <div id="correctAnswer">
-                                         <p>Correct <span></span> </p>    
-                                      </div>
-                                    <div id="incorrectAnswer">
-                                  Incorrect <br>
-                                Correct Answer is: <span>Barack Obama</span>
-                             </div>
-                             <div class="item-double">
-                        <div class="first-question js-first-question"> 
-                   <form class="firstForm">
-                      <h2>Who was the president of the United States in 2010? </h2>
-                        <ul>
-                          <li>
-                            <input type="radio" id="name1" name="president" value="barack-obama">
-                              <label for="name1">Barack Obama</label>
-                                </li>
-                                  <li>
-                                    <input type="radio" id="name2" name="president" value="george-W-bush">
-                                      <label for="name2">George W Bush</label>
-                                        </li>
-                                           <li>
-                                            <input type="radio" id="name3" name="president" value="Lyndon-Johnson">
-                                         <label for="name3">Lyndon Johnson</label>
-                                      </li>
-                                    <li>
-                                  <input type="radio" id="name4" name="president" value="bill-clinton">
-                              <label for="name4">Bill Clinton</label>
-                            </li>
-                          </ul>
-                        <button class="btn-sbt">Submit</button>           
-                    </form>
-                    </div> 
-                  </div>
-                   </div>  
+                 <div class="usQuestion">
+                   <p>Who was the president of the United States in 1970? </p>
                     </div>
-             Section Question number 7 with a div for result, score, correct and incorrect boxes
-                <div id="container">
-                  <div class="group">
-                   <div class="result">
-                     <p>Question Number : <span id="Qnumber">0</span></br>
-                       Score : <span id="score">0</span></p>
-                        </div>
-                           <div>
-                             <button id="btn-next" >Next >>></button>      
-                               </div>
-                               <div id="correctAnswer">
-                                  <p>Correct <span></span> </p>    
-                                    </div>
-                                  <div id="incorrectAnswer">
-                              Incorrect <br>
-                            Correct Answer is: <span>Donald J Trump</span>
-                        </div>
-                        <div class="item-double">
-                     <div class="first-question js-first-question"> 
-                <form class="firstForm">
-                  <h2>Who is the current president of the United States (2020)? </h2>
-                    <ul>
-                      <li>
-                        <input type="radio" id="name1" name="president" value="barack-obama">
-                          <label for="name1">Barack Obama</label>
-                            </li>
-                              <li>
-                                <input type="radio" id="name2" name="president" value="george-W-bush">
-                                  <label for="name2">George W Bush</label>
-                                    </li>
-                                       <li>
-                                     <input type="radio" id="name3" name="president" value="donald-j-trump">
-                                  <label for="name3">Donald J Trump</label>
-                               </li>
-                             <li>
-                           <input type="radio" id="name4" name="president" value="jimmy-carter">
-                         <label for="name4">Jimmy Carter</label>
-                       </li>
-                     </ul>
-                  <button class="btn-sbt">Submit</button>   
-              </form>
-             </div>
-            </div> 
-            </div> 
-             </div> 
-             -->
-            </main>
-             <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
-             <script src="app.js"></script>
-          </body>
+                       <div id="input1">
+                         <input type="radio" id="option1" name="option" value="Ronald Reagan">
+                            <label for="option1">Ronald Reagan</label>
+                              </div>
+                                <div id="input2">
+                              <input type="radio" id="option2" name="option" value="Jimmy Carter">
+                            <label for="option2">Jimmy Carter</label>
+                          </div>
+                         <div id="question3">
+                       <input type="radio" id="option3" name="option" value="Richard Nixon">
+                     <label for="option3">Richard Nixon</label>
+                  </div>
+                <div id=question4>
+                <input type="radio" id="option4" name="option" value="Harry Truman">
+              <label for="option4">Harry Truman</label>
+            </div>
+        </div>
+        <button type="submit" class="btn-sbt">Submit</button> 
+          </form>
+             </div>    
+                   <div class="item">
+                    <!-- <div id="correctAnswer">
+                        <p>Correct <span></span> </p>    
+                          </div>
+                            <div id="incorrectAnswer">
+                           Incorrect <br>
+                        Correct Answer is: <span>Dweight Eisenhower</span>
+                     </div>-->
+                     <button type="button" id="btn-next"> Next >>></button> 
+                   </div>
+                 </div>
+               </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
 
-          </html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> IntroductionUS Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="intro.css" rel="stylesheet" type="text/css"/>
+  <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <!--This is the title of the app h1-->
+  <header>
+    <div>
+      <h1>USA Presidency Office History App Quiz</h1>
+        </div>
+      </header>
+       <main>
+        <ul class="result">
+          <li id="Qnumber">
+            Question Number: 3/7</li>
+          
+          <li id=score>
+            Score : 0/7</li>
+        </ul>
+  <!--Section Question number 1 with a div for result, score, correct and incorrect boxes-->
+      <div class="group">
+         <div id="container">
+           <div class="item-double">
+             <div class="first-question js-first-question"> 
+               <form class="firstForm">
+                 <div class="usQuestion">
+                   <p>Who was the president of the United States in 1980? </p>
+                    </div>
+                       <div id="input1">
+                         <input type="radio" id="option1" name="option" value="Bill Clinton">
+                            <label for="option1">Bill Clinton</label>
+                              </div>
+                                <div id="input2">
+                              <input type="radio" id="option2" name="option" value="George W Bush">
+                            <label for="option2">George W Bush</label>
+                          </div>
+                         <div id="question3">
+                       <input type="radio" id="option3" name="option" value="Lyndon Johnson">
+                     <label for="option3">Lyndon Johnson</label>
+                  </div>
+                <div id=question4>
+                <input type="radio" id="option4" name="option" value="Jimmy Carter">
+              <label for="option4">Jimmy Carter</label>
+            </div>
+        </div>
+        <button type="submit" class="btn-sbt">Submit</button> 
+          </form>
+             </div>    
+                   <div class="item">
+                    <!-- <div id="correctAnswer">
+                        <p>Correct <span></span> </p>    
+                          </div>
+                            <div id="incorrectAnswer">
+                           Incorrect <br>
+                        Correct Answer is: <span>Dweight Eisenhower</span>
+                     </div>-->
+                     <button type="button" id="btn-next"> Next >>></button> 
+                   </div>
+                 </div>
+               </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> IntroductionUS Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="intro.css" rel="stylesheet" type="text/css"/>
+  <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <!--This is the title of the app h1-->
+  <header>
+    <div>
+      <h1>USA Presidency Office History App Quiz</h1>
+        </div>
+      </header>
+       <main>
+        <ul class="result">
+          <li id="Qnumber">
+            Question Number: 4/7</li>
+          
+          <li id=score>
+            Score : 0/7</li>
+        </ul>
+  <!--Section Question number 1 with a div for result, score, correct and incorrect boxes-->
+      <div class="group">
+         <div id="container">
+           <div class="item-double">
+             <div class="first-question js-first-question"> 
+               <form class="firstForm">
+                 <div class="usQuestion">
+                   <p>Who was the president of the United States in 1990? </p>
+                    </div>
+                       <div id="input1">
+                         <input type="radio" id="option1" name="option" value="George Bush">
+                            <label for="option1">Ronald Reagan</label>
+                              </div>
+                                <div id="input2">
+                              <input type="radio" id="option2" name="option" value="George w Bush">
+                            <label for="option2">Dwight Eisenhower</label>
+                          </div>
+                         <div id="question3">
+                       <input type="radio" id="option3" name="option" value="Bill Clinton">
+                     <label for="option3">Borack Obama</label>
+                  </div>
+                <div id=question4>
+                <input type="radio" id="option4" name="option" value="Richard Nixon">
+              <label for="option4">Jimmy Carter</label>
+            </div>
+        </div>
+        <button type="submit" class="btn-sbt">Submit</button> 
+          </form>
+             </div>    
+                   <div class="item">
+                    <!-- <div id="correctAnswer">
+                        <p>Correct <span></span> </p>    
+                          </div>
+                            <div id="incorrectAnswer">
+                           Incorrect <br>
+                        Correct Answer is: <span>Dweight Eisenhower</span>
+                     </div>-->
+                     <button type="button" id="btn-next"> Next >>></button> 
+                   </div>
+                 </div>
+               </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> IntroductionUS Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="intro.css" rel="stylesheet" type="text/css"/>
+  <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <!--This is the title of the app h1-->
+  <header>
+    <div>
+      <h1>USA Presidency Office History App Quiz</h1>
+        </div>
+      </header>
+       <main>
+        <ul class="result">
+          <li id="Qnumber">
+            Question Number: 5/7</li>
+          
+          <li id=score>
+            Score : 0/7</li>
+        </ul>
+  <!--Section Question number 1 with a div for result, score, correct and incorrect boxes-->
+      <div class="group">
+         <div id="container">
+           <div class="item-double">
+             <div class="first-question js-first-question"> 
+               <form class="firstForm">
+                 <div class="usQuestion">
+                   <p>Who was the president of the United States in 2000? </p>
+                    </div>
+                       <div id="input1">
+                         <input type="radio" id="option1" name="option" value="Barack Obama">
+                            <label for="option1">Barack Obama</label>
+                              </div>
+                                <div id="input2">
+                              <input type="radio" id="option2" name="option" value="George W Bush">
+                            <label for="option2">George W Bush</label>
+                          </div>
+                         <div id="question3">
+                       <input type="radio" id="option3" name="option" value="Lyndon Johnson">
+                     <label for="option3">Lyndon Jackson</label>
+                  </div>
+                <div id=question4>
+                <input type="radio" id="option4" name="option" value="Bill Clinton">
+              <label for="option4">Bill Clinton</label>
+            </div>
+        </div>
+        <button type="submit" class="btn-sbt">Submit</button> 
+          </form>
+             </div>    
+                   <div class="item">
+                    <!-- <div id="correctAnswer">
+                        <p>Correct <span></span> </p>    
+                          </div>
+                            <div id="incorrectAnswer">
+                           Incorrect <br>
+                        Correct Answer is: <span>Dweight Eisenhower</span>
+                     </div>-->
+                     <button type="button" id="btn-next"> Next >>></button> 
+                   </div>
+                 </div>
+               </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> IntroductionUS Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="intro.css" rel="stylesheet" type="text/css"/>
+  <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <!--This is the title of the app h1-->
+  <header>
+    <div>
+      <h1>USA Presidency Office History App Quiz</h1>
+        </div>
+      </header>
+       <main>
+        <ul class="result">
+          <li id="Qnumber">
+            Question Number: 6/7</li>
+          
+          <li id=score>
+            Score : 0/7</li>
+        </ul>
+  <!--Section Question number 1 with a div for result, score, correct and incorrect boxes-->
+      <div class="group">
+         <div id="container">
+           <div class="item-double">
+             <div class="first-question js-first-question"> 
+               <form class="firstForm">
+                 <div class="usQuestion">
+                   <p>Who was the president of the United States in 2010? </p>
+                    </div>
+                       <div id="input1">
+                         <input type="radio" id="option1" name="option" value="Ronald-Reagan">
+                            <label for="option1">Ronald Reagan</label>
+                              </div>
+                                <div id="input2">
+                              <input type="radio" id="option2" name="option" value="Dwight Eisenhower">
+                            <label for="option2">Dwight Eisenhower</label>
+                          </div>
+                         <div id="question3">
+                       <input type="radio" id="option3" name="option" value="Borack Obama">
+                     <label for="option3">Borack Obama</label>
+                  </div>
+                <div id=question4>
+                <input type="radio" id="option4" name="option" value="Jimmy Carter">
+              <label for="option4">Jimmy Carter</label>
+            </div>
+        </div>
+        <button type="submit" class="btn-sbt">Submit</button> 
+          </form>
+             </div>    
+                   <div class="item">
+                    <!-- <div id="correctAnswer">
+                        <p>Correct <span></span> </p>    
+                          </div>
+                            <div id="incorrectAnswer">
+                           Incorrect <br>
+                        Correct Answer is: <span>Dweight Eisenhower</span>
+                     </div>-->
+                     <button type="button" id="btn-next"> Next >>></button> 
+                   </div>
+                 </div>
+               </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> IntroductionUS Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="intro.css" rel="stylesheet" type="text/css"/>
+  <link href="app.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <!--This is the title of the app h1-->
+  <header>
+    <div>
+      <h1>USA Presidency Office History App Quiz</h1>
+        </div>
+      </header>
+       <main>
+        <ul class="result">
+          <li id="Qnumber">
+            Question Number: 1/7</li>
+          
+          <li id=score>
+            Score : 0/7</li>
+        </ul>
+  <!--Section Question number 1 with a div for result, score, correct and incorrect boxes-->
+      <div class="group">
+         <div id="container">
+           <div class="item-double">
+             <div class="first-question js-first-question"> 
+               <form class="firstForm">
+                 <div class="usQuestion">
+                   <p>Who was the president of the United States in 2020? </p>
+                    </div>
+                       <div id="input1">
+                         <input type="radio" id="option1" name="option" value="Barack Obama">
+                            <label for="option1">Barack Obama</label>
+                              </div>
+                                <div id="input2">
+                              <input type="radio" id="option2" name="option" value="Dwight Eisenhower">
+                            <label for="option2">Dwight Eisenhower</label>
+                          </div>
+                         <div id="question3">
+                       <input type="radio" id="option3" name="option" value="Donald J Trump">
+                     <label for="option3">Donald J Trump</label>
+                  </div>
+                <div id=question4>
+                <input type="radio" id="option4" name="option" value="Jimmy Carter">
+              <label for="option4">Jimmy Carter</label>
+            </div>
+        </div>
+        <button type="submit" class="btn-sbt">Submit</button> 
+          </form>
+             </div>    
+                   <div class="item">
+                    <!-- <div id="correctAnswer">
+                        <p>Correct <span></span> </p>    
+                          </div>
+                            <div id="incorrectAnswer">
+                           Incorrect <br>
+                        Correct Answer is: <span>Dweight Eisenhower</span>
+                     </div>-->
+                     <button type="button" id="btn-next"> Next >>></button> 
+                   </div>
+                 </div>
+               </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+  
+
+

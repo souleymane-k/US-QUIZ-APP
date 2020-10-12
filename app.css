@@ -7,13 +7,16 @@
   *
 */
 /*    */
-
-html{
-  background-image: url("images/image-us-flag.jpg" );
-   
-}
 * {
   box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-image: url("images/image-us-flag.jpg" );
+  background:cover;
+  margin:0;
+   
 }
 
 /* HEADER    */
@@ -29,6 +32,30 @@ header div p{
 /* H VALUES   */
 h1{
   color:#BD0B2F;
+}
+/* Media Query and type  for screen grater or equal to 800px*/
+@media all and (max-width: 600px) {
+  #container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+}
+
+
+/* Media Query and type  for screen grater or equal to 800px*/
+@media all and (min-width: 800px) {
+  #container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
 
 /* ---------------Groups & Items  (Mobile First) ----------- */
@@ -52,30 +79,7 @@ h1{
   flex: 2;
   margin: 10px;
 }
-/* Media Query and type  for screen grater or equal to 800px*/
-@media all and (max-width: 600px) {
-  #container {
-    width: 80%;
-    margin: auto;
-  }
 
-  .group {
-    flex-direction: column;
-  }
-}
-
-
-/* Media Query and type  for screen grater or equal to 800px*/
-@media all and (min-width: 800px) {
-  #container {
-    width: 100%;
-    margin: auto;
-  }
-
-  .group {
-    flex-direction: row;
-  }
-}
 
 
 
@@ -90,17 +94,15 @@ h1{
   padding:20px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 3px black;
-  position: relative;
-  
+  /*position relative*/
 }
 
 
 .result{
-
   height:80px;
-  width: 100px;;
+  width: 120px;;
   text-align:center;
-  font-size: 200px;
+  font-size: 20px;
   background-color: white;
   width:200px;
   margin-left: 40%;
@@ -108,7 +110,7 @@ h1{
   border-radius: 15px;
   background-color: blue;
   color:white;
-  padding: 5px;
+  padding: 10px;
 }
 
 /*--------     btn    ---------------*/
@@ -117,8 +119,8 @@ h1{
   font-size:20px;
   background-color: white;
   width:200px;
-  position: absolute;
-  left: 600px;
+  /*position: absolute;*/
+  /*left: 600px;*/
   margin-bottom: 10px;
   margin-left: 10px;
   height: 80px;
@@ -127,16 +129,20 @@ h1{
   color:white;
   padding:5px;
   cursor: pointer;
- /*display:none;*/
+  display: none;
+  
+
 }
 .btn-sbt{
   background-color: blue;
   color:white;
   border-radius: 10px;
-  margin-top: 15px;
+  margin-top: 50px;
+  cursor: pointer;
+  height: 40px;
+  width:100px;
+  
 }
-
-
 
 .firstForm{
   font-size:20px;
@@ -158,9 +164,10 @@ ul li{
   font-size:25px;
   border-radius: 15px;
   left:400px;
-  margin-top:-90px;
-  position: absolute;
-  display:none;
+  margin-top: -150px;
+  /*position: absolute;*/
+  /*display:none;*/
+  float: right;
  
 }
 
@@ -173,13 +180,17 @@ ul li{
   padding: 5px;
   font-size:25px;
   border-radius: 15px;
-  margin-top: -60px; 
-  position: absolute; 
+  margin-top: 50px; 
+  /*position: absolute;*/
   left: 400px;
+  
 }
+
 p{
   font-size:30px;
+
 }
+
 
 
 

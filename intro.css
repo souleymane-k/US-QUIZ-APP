@@ -3,10 +3,6 @@
 * {
   box-sizing:border-box;
 }
-html{
-    background-image: url("images/image-us-flag.jpg" );
-     
-  }
 
 #startContainer{
     height: 300px;

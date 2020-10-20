@@ -5,7 +5,7 @@
 }
 
 #startContainer{
-    height: 300px;
+    height: 400px;
     width:800px;
     background-color: rgb(209, 202, 202);
     margin: 20px auto;
@@ -22,6 +22,8 @@ h3{
 h2{
   text-align:center;
 }
+
+
 #start {
     /*position: relative;*/
     width: 200px;
@@ -44,9 +46,9 @@ h2{
     margin: auto;
   }
 
-  .group {
+ /* .group {
     flex-direction: column;
-  }
+  }*/
 }
 
 
@@ -57,8 +59,8 @@ h2{
     margin: auto;
   }
 
-  .group {
+ /* .group {
     flex-direction: row;
-  }
+  }*/
 }
 

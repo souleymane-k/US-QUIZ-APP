@@ -6,196 +6,132 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
-/*    */
+
+
+/*h1 {
+	text-align: center;
+	font-family: fantasy;
+}*/
+
+body {
+
+  background: url('images.jpg') 0 0;
+  
+}
+
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
-body{
-  font-family: sans-serif;
-  /*background-image: url("images/image-us-flag.jpg" );*/
-  background:cover;
-  margin:0;
+/*#container{
+    height: 400px;
+    width:1000px;
+    background-color: gray;
+    margin: 20px auto;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px red;
    
-}
+  }*/
 
-/* HEADER    */
-
-header div{
+h1 {
   text-align:center;
-}
-header div p{
- font-size: 10px;
- 
-}
-
-/* H VALUES   */
-h1{
-  color:#BD0B2F;
-}
-/* Media Query and type  for screen grater or equal to 800px*/
-@media all and (max-width: 600px) {
-  #container {
-    width: 100%;
-    margin: auto;
-  }
-
-  .group {
-    flex-direction: column;
-  }
+  font-family: sans-serif;
+  margin-left: 20px;
+  
 }
 
-
-/* Media Query and type  for screen grater or equal to 800px*/
-@media all and (min-width: 800px) {
-  #container {
-    width: 100%;
-    margin: auto;
-  }
-
-  .group {
-    flex-direction: row;
-  }
+p {
+  font-size:24px;
 }
 
-/* ---------------Groups & Items  (Mobile First) ----------- */
-#container{
-  width: 100%;
-  margin:auto;
-}
+/*#container{
+  border:2px;
+  border-radius:10px;
+  width:1000px;
+  height:400px;
+  background-color:gray;
+  
+}*/
 
-.group {
+/**/
+
+.firstPage, .quiz-interface, .answer-response, .quiz-results {
+  margin: 20px;
+  padding: 26px;
+  /*border: 2px solid darkgoldenrod;*/
+  background-color:rgb(61, 56, 56);
   display: flex;
   flex-direction: column;
-}
-
-.item {
-  flex: 1;
-  margin: 10px;
-  text-align: right;;
-}
-
-.item-double {
-  flex: 2;
-  margin: 10px;
-}
-
-
-
-
-
-
-/*-------------- THE CONTAINER ---------------------------*/
-#container{
-  height: 400px;
-  width:1000px;
-  background-color: rgb(209, 202, 202);
-  margin: 20px auto;
-  padding:20px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px 3px black;
-  /*position relative*/
-}
-
-
-.result{
-  height:80px;
-  width: 120px;;
-  text-align:center;
-  font-size: 20px;
-  background-color: white;
-  width:200px;
-  margin-left: 40%;
-  /*position: absolute;*/
-  border-radius: 15px;
-  background-color: blue;
   color:white;
-  padding: 10px;
-}
-
-/*--------     btn    ---------------*/
-#btn-next{
-  text-align:center;
-  font-size:20px;
-  background-color: white;
-  width:200px;
-  /*position: absolute;*/
-  /*left: 600px;*/
-  margin-bottom: 10px;
-  margin-left: 10px;
-  height: 80px;
-  border-radius: 15px;
-  background-color: blue;
-  color:white;
-  padding:5px;
-  cursor: pointer;
-  display: none;
-  
-
-}
-.btn-sbt{
-  background-color: blue;
-  color:white;
-  border-radius: 10px;
-  margin-top: 50px;
-  cursor: pointer;
-  height: 40px;
-  width:100px;
-  
-}
-
-.firstForm{
-  font-size:20px;
-  /*display:none;*/
-  text-decoration: none;
-
-}
-ul li{
-  list-style: none;
-}
-
-#incorrectAnswer{
-  background-color:red;
-  color:white;
-  height:100px;
-  width:300px;
-  text-align: center;
-  padding:10px;
-  font-size:25px;
-  border-radius: 15px;
-  left:400px;
-  margin-top: -150px;
-  /*position: absolute;*/
-  /*display:none;*/
-  float: right;
+  border-radius:10px;
+  border:2px;
+  box-shadow: 3px 3px 3px 3px white;
  
 }
 
-#correctAnswer{
-  background-color:green;
+ol li {
+  margin: 8px;
+  font-size: 24px;
+}
+
+/*input[type='radio'] {transform: scale(1.4)}*/
+
+
+.quiz-results {
+	text-align: center;
+}
+
+.submit-answer, .restart-quiz {
+	display: block;
+	text-align: center;
+  margin: 0 auto;
+  background-color:rgb(95, 79, 233);
+  border-radius:15px;
+  cursor:pointer;
+  width:200px;
+  height:50px;
   color:white;
-  height:80px;
-  width:300px;
-  text-align: center;
-  padding: 5px;
-  font-size:25px;
-  border-radius: 15px;
-  margin-top: 50px; 
-  /*position: absolute;*/
-  left: 400px;
+}
+
+
+#StartQuizApp  {
+  display: block;
+	text-align: center;
+  margin-top: 100px;
+  background-color:rgb(95, 79, 233);
+  border-radius:15px;
+  cursor:pointer;
+  width:100px;
+  height:50px;
+  color:white;
   
+} .next-question{
+  background-color:rgb(95, 79, 233);
+  border-radius:15px;
+  cursor:pointer;
+  width:100px;
+  height:50px;
+  color:white;
 }
 
-p{
-  font-size:30px;
+/* Media Query and type  for screen less or equal to 800px*/
+
+@media all and (max-width: 600px) {
+  #container {
+    flex-direction:column;
+    width: 100%;
+    margin: auto;
+  }
 
 }
 
+/* Media Query and type  for screen grater or equal to 800px*/
+@media all and (min-width: 600px) {
+  #container {
+    flex-direction:row;
+    width: 100%;
+    margin: auto;
+  }
 
-
-
-
-
-
-
-
+}

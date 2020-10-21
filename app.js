@@ -43,66 +43,66 @@ const store = {
         correctAnswer: 'George Bush'
     },
     { // Question 5
-      question: 'Who was the president of the United States in 2010?',
+      question: 'Who was the president of the United States in 1995?',
         answers: [
           'George W Bush',
-          'Donald J Trump',
+          'Bill Clinton',
           'Barack Obama',
           'Jimmy Carter'
         ],
-        correctAnswer: 'Barack Obama'
+        correctAnswer: 'Bill Clinton'
       
     },
     { // Question 6
-      question: 'Who was the president of the United States in 2010?',
+      question: 'Who was the president of the United States in 2000?',
+        answers: [
+          'George W Bush',
+          'Donald J Trump',
+          'Barack Obama',
+          'Bill Clinton'
+        ],
+        correctAnswer: 'Bill Clinton'
+    },
+    { // Question 7
+      question: 'Who was the president of the United States in 2005?',
         answers: [
           'George W Bush',
           'Donald J Trump',
           'Barack Obama',
           'Jimmy Carter'
-        ],
-        correctAnswer: 'Barack Obama'
-    },
-    { // Question 7
-      question: 'Who is the current president of the United States 2020?',
-      answers: [
-        'George W Bush',
-        'Dwight Eisenhower',
-        'Donald J Trump',
-        'Jimmy Carter'
       ],
-      correctAnswer: 'Donald J Trump'
+      correctAnswer: 'George W Bush'
     
     },
     { // Question 8
-      question: 'Who was the president of the United States in 1990?',
+      question: 'Who was the president of the United States in 2010?',
         answers: [
           'George Bush',
           'George W Bush',
           'Bill Clinton',
-          'Richard Nixon'
+          'Barack Obama'
         ],
-        correctAnswer: 'George Bush'
+        correctAnswer: 'Barack Obama'
     },
     { // Question 9
-      question: 'Who was the president of the United States in 1990?',
+      question: 'Who was the president of the United States in 2015',
         answers: [
           'George Bush',
-          'George W Bush',
+          'Barack Obama',
           'Bill Clinton',
           'Richard Nixon'
         ],
-        correctAnswer: 'George Bush'
+        correctAnswer: 'Barack Obama'
     },
     { // Question 10
-      question: 'Who was the president of the United States in 1990?',
+      question: 'Who is the current president of the United States?',
         answers: [
           'George Bush',
           'George W Bush',
-          'Bill Clinton',
+          'Donald J. Trump',
           'Richard Nixon'
         ],
-        correctAnswer: 'George Bush'
+        correctAnswer: 'Donald J. Trump'
     }
   ],
   quizStarted: false,
@@ -218,7 +218,7 @@ function stringifyAnswerArray(answer){
   <div id=container>
     <li>
       <div class="answer-container" >
-      <input type="radio" name="answer" id="answer-${name}" data-answer="${answer}" require>
+      <input type="radio" name="answer" id="answer-${name}" data-answer="${answer}" required>
       <label for="answer-${name}"> ${answer}</label>
      
       </div>
@@ -231,9 +231,9 @@ function generateQuizResultsString(){
   return `
     <div class='quiz-results' id="container">
       <p>
-       The Quiz is over.
+       Thank you for taking the USA Presidency History Quiz App. 
          </p>
-          <p>You scored ${store.score} out of ${store.questions.length}</p>            
+          <p>You scored ${store.score}/${store.questions.length}</p>            
         <button class="restart-quiz">Restart Quiz</button>      
     </div>   
     
@@ -266,13 +266,12 @@ function renderQuiz () {
 }
 
 
-// Changes the state of the application to a quizStarted = true
+//************* quizStarted = true Allows us to start the quiz************
 function startQuiz() {
-  //console.log('quiz has begun');
   store.quizStarted = true;
 }
 
-// currentQuestion
+//****************currentQuestion************************
 function currentQuestion(){
   let index = store.questionNumber;
   let questionObject = store.questions[index];
@@ -282,8 +281,8 @@ function currentQuestion(){
   };
 }
 
-// Go to the next question of the quiz
-// Model function changes state
+// Allows to move to the next question of the quiz
+
 function nextQuestion(){
   if (store.questionNumber < store.questions.length){
     store.questionNumber++;
@@ -303,7 +302,7 @@ function validateCorrectAnswer() {
 
   if (radios.filter(':checked').length === 0) {
     //alert('Please select an answer.');
-    return;
+   return;
   } else {
     store.submittingAnswer = true;
     if(selectedAnswer === correctAnswer){
@@ -343,7 +342,6 @@ function handleBeginQuizSubmit(){
 function handleSubmitAnswer() {
   $('main').on('click' , '.submit-answer', (event)=>{
     event.preventDefault();
-    //console.log('submitting answer');
     validateCorrectAnswer();
     renderQuiz();
   });
@@ -374,7 +372,8 @@ function handleRestartQuizSubmit(){
 }
 
 
-// This function will launch all other functions after the page is loaded
+// handleQuiz will launch all other functions after the page is loaded
+
 function handleQuiz (){
   renderQuiz();
   handleBeginQuizSubmit();

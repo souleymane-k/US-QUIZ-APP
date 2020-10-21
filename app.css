@@ -79,7 +79,8 @@ ol li {
 
 
 .quiz-results {
-	text-align: center;
+  text-align: center;
+  background-color: green;
 }
 
 .submit-answer, .restart-quiz {

@@ -70,12 +70,24 @@ p {
  
 }
 
+/*#container-1, .quiz-interface {
+  margin: 20px;
+  padding: 26px;
+  /*border: 2px solid darkgoldenrod;*/
+  /*background-color:rgb(61, 56, 56);
+  display: flex;
+  flex-direction: column;
+  color:white;
+  border-radius:10px;
+  border:2px;
+  box-shadow: 3px 3px 3px 3px white;
+
+}*/
+
 ol li {
   margin: 8px;
   font-size: 24px;
 }
-
-/*input[type='radio'] {transform: scale(1.4)}*/
 
 
 .quiz-results {
@@ -118,8 +130,8 @@ ol li {
 
 /* Media Query and type  for screen less or equal to 800px*/
 
-@media all and (max-width: 600px) {
-  #container {
+@media all and (max-width: 800px) {
+  #container-1 {
     flex-direction:column;
     width: 100%;
     margin: auto;
@@ -128,8 +140,8 @@ ol li {
 }
 
 /* Media Query and type  for screen grater or equal to 800px*/
-@media all and (min-width: 600px) {
-  #container {
+@media all and (min-width: 800px) {
+  #container-1 {
     flex-direction:row;
     width: 100%;
     margin: auto;

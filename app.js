@@ -140,7 +140,7 @@ const store = {
 
 function generateFirstPageHtml() {
   return `
-   <div id=container>
+   <div id="container-1">
   <div class="firstPage">
     <form>
       <p>
@@ -153,8 +153,6 @@ function generateFirstPageHtml() {
     `;
 }
 function generateStartQuestionHtml(questionObject) {
-  // console.log(questionObject);
-  // console.log(questionObject.question.answers);
   return `
     <div class='quiz-interface'>
       <p> Question: ${questionObject.index}/${store.questions.length}</p>
@@ -189,7 +187,7 @@ function generateAnswerResults(){
   let isLastQuestion = (store.questionNumber + 1) === (store.questions.length);
   
   return `
-    <div class="answer-response" id="container">
+    <div class="answer-response" id="container-1">
     <form>
     <p>${answerArray[0] === true ? correctResponse : incorrectResponse}</p>
     <p> Score: ${store.score}</p>
@@ -207,7 +205,6 @@ function generateQuizAnswers(answers){
     answerArray.push(answer);
     indexArray.push(answers.indexOf(answer));
   });
-  //console.log(indexArray);
   return answerArray.map(answer => stringifyAnswerArray(answer)).join('');
 }
 
@@ -215,7 +212,7 @@ function stringifyAnswerArray(answer){
   let questionNumber = store.questionNumber;
   let name = store.questions[questionNumber].answers.indexOf(answer);
   return `
-  <div id=container>
+  <div id=container-1>
     <li>
       <div class="answer-container" >
       <input type="radio" name="answer" id="answer-${name}" data-answer="${answer}" required>
@@ -229,7 +226,7 @@ function stringifyAnswerArray(answer){
 
 function generateQuizResultsString(){
   return `
-    <div class='quiz-results' id="container">
+    <div class='quiz-results' id="container-1">
       <p>
        Thank you for taking the USA Presidency History Quiz App. 
          </p>
@@ -238,7 +235,7 @@ function generateQuizResultsString(){
     </div>   
     
 `;
-        }
+}
 
 
 
@@ -266,7 +263,7 @@ function renderQuiz () {
 }
 
 
-//************* quizStarted = true Allows us to start the quiz************
+//**************quizStarted = true Allows us to start the quiz************
 function startQuiz() {
   store.quizStarted = true;
 }
@@ -287,21 +284,19 @@ function nextQuestion(){
   if (store.questionNumber < store.questions.length){
     store.questionNumber++;
     store.submittingAnswer =false;
-   // console.log(store.questionNumber);
   } else if(store.questionNumber === store.questions.length) {
     store.quizStarted = false;
   }
 }
 
+//************ This function Validate the correct  answer**************/
 
 function validateCorrectAnswer() {
   let radios = $('input:radio[name=answer]');
   let selectedAnswer = $('input[name="answer"]:checked').data('answer');
   let questionNumber = store.questionNumber;
   let correctAnswer = store.questions[questionNumber].correctAnswer;
-
   if (radios.filter(':checked').length === 0) {
-    //alert('Please select an answer.');
    return;
   } else {
     store.submittingAnswer = true;
@@ -326,9 +321,8 @@ function restartQuiz() {
   store.currentQuestionState.answerArray = [];
 }
 
-/********** EVENT HANDLER FUNCTIONS **********/
-// These functions handle events (submit, click, etc)
-// Controller layer
+/********************EVENT HANDLER FUNCTIONS for submit, click,*******************/
+
 
 function handleBeginQuizSubmit(){
   
@@ -372,7 +366,7 @@ function handleRestartQuizSubmit(){
 }
 
 
-// handleQuiz will launch all other functions after the page is loaded
+// This is the call back function which will launch all other functions after the page is loaded
 
 function handleQuiz (){
   renderQuiz();

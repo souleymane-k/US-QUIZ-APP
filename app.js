@@ -144,7 +144,7 @@ function generateFirstPageHtml() {
   <div class="firstPage">
     <form>
       <p>
-        This Quiz will check your konwledge about US presidency history.
+        This Quiz will check your knowledge about US presidency history.
       </p>
       <button type="submit"id="StartQuizApp" autofocus>Start Quiz</button>
     </form>
